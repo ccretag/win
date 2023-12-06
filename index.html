@@ -1,0 +1,21 @@
+<html>
+<body>
+    <h1>win2</h1>
+    <canvas id="Canvas1" width="300" height="300" style="border: 1px solid black;">
+    <canvas id="Canvas2" width="200" height="150" style="border: 1px solid red;">
+<script>
+var c1 = document.getElementById("Canvas1");
+var ct1 = c1.getContext("2d");
+var c2 = document.getElementById("Canvas2");
+var ct2 = c2.getContext("2d");
+  
+  c1.addEventListener("click", function() {
+      alert("1 clicked")
+})
+  c2.addEventListener("click", function() {
+      alert("2 clicked")
+})
+</script>
+
+    </body>
+</html>
