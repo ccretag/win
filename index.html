@@ -11,8 +11,16 @@
         var c2 = document.getElementById("Canvas2");
         var ct2 = c2.getContext("2d");
 
-        c1.addEventListener("click", function () {
+        c1.addEventListener("click", function (event) {
             ct1.fillText("X", 10, 10);
+              var mouseX = event.clientX;
+            var mouseY = event.clientY;
+
+            // Set the position of Canvas1 to the mouse position
+            c1.style.position = "absolute";
+            c1.style.left = mouseX + "px";
+            c1.style.top = mouseY + "px";
+
         });
 
         c2.addEventListener("click", function () {
